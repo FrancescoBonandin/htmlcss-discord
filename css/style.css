@@ -35,6 +35,13 @@
 /* UTILITY */
 
 /*----GENERAL----*/
+*{
+    font-family: 'Whitney', sans-serif;
+    font-family: 'Whitney Semibold', sans-serif;
+    font-family: 'Whitney Book', sans-serif;
+    font-family: 'Whitney Light', sans-serif;
+}
+
 .container{
     max-width: 1200px;
     margin:0 auto;
@@ -51,7 +58,7 @@
 
 .my-button{
     border-radius: 50px;
-    padding: 5px 0;
+    padding: 0.5em;
 
 }
 
@@ -64,12 +71,17 @@
     color: #FFFFFF;
 }
 
+.my-button[class^=background] {
+    text-align:center;
+}
+
 
 /*---------------*/
 
 /* HEADER */
 header{
     padding: 15px 0;
+    background-color: #255EE9;
 }
 
 .navbar{
@@ -90,24 +102,50 @@ header{
     width: 100%;
 }
 
+.navbar.flex-container.space-between nav > ul > li{
+    color: #FFFFFF;
+}
 
 .login{
     text-align: center;
-    align-self: center;
 }
+
 
 /*---------------  */
 
 /* SEZIONE MAIN 1 */
+main > section.jumbotron{
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+}
 
 .media{
-    height:300px;
+    padding:50px 0;
     width:100%
 }
 
 .media-window{
     height: 80%;
-    width: 80%;
+    width: 60%;
+    text-align: center;
+}
+
+.media-window h2{
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.media-window p{
+    font-size: 1.5em;
+}
+
+.media-window > div.flex-container{
+    padding: 1.5em 0;
+    margin: 0 15px;
+}
+
+.media-window > div.flex-container .my-button{
+    margin: 0 15px;
 }
 
 /* SEZIONE MAIN 1 */
@@ -218,11 +256,11 @@ footer > section:nth-child(2) div.flex-container.space-between *{
 
 /*-------DEBUG---------*/
 
-.debug{
+/* .debug{
     
     background-color: aqua;
     border: 3px dashed red;
-}
+} */
 
 /* .debug > header{
     background-color: lightblue;
@@ -239,14 +277,14 @@ footer > section:nth-child(2) div.flex-container.space-between *{
     border: solid black 1px;
 } */
 
-.debug > main > section:nth-child(1){
+/* .debug > main > section:nth-child(1){
     background-color: blue;
 }
 
 .debug > main > section:nth-child(1) .media-window{
     background-color: fuchsia;
     border: 5px dashed black;
-}
+} */
 
 .debug > main > section:nth-child(even){
     background-color: lightcoral;
