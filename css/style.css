@@ -29,6 +29,9 @@
     justify-content: space-between;
 }
 
+.space-around{
+    justify-content: space-around;
+}
 /* UTILITY */
 
 /*----GENERAL----*/
@@ -38,47 +41,60 @@
     height: 100%;
 }
 
+.col-1-5{
+    width: calc(100% / 5);
+}
+
+.col-3-5{
+    width: calc((100% / 5) * 3);
+}
+
+.my-button{
+    border-radius: 50px;
+    padding: 5px 0;
+
+}
+
+.background-white{
+    background-color: #FFFFFF;
+}
+
+.background-dark{
+    background-color: #23272A;
+    color: #FFFFFF;
+}
+
 
 /*---------------*/
 
 /* HEADER */
 header{
-    height: 100px;
+    padding: 15px 0;
 }
 
 .navbar{
-    width: 80%;
-    height: 50%;
+    width: 100%;
+    height: 80px;
+    margin: 0 -30px;
 }
 
-.navbar *:not(input){
-    height: 100%;
-    
+.navbar a, .navbar a:visited{    
+    text-decoration: none;
+    color: #23272A;
 }
 
-.navbar .logo, .navbar .login{
-    width: 20%;
-    
-}
 
-.navbar nav{
-    width: 60%;
-    height: 100%;
-}
 
 .navbar nav > ul{
     list-style: none;
     width: 100%;
-    
-    
-    
-}
-
-.navbar ul > li{
-    width: calc(100% / 4);
 }
 
 
+.login{
+    text-align: center;
+    align-self: center;
+}
 
 /*---------------  */
 
@@ -208,28 +224,20 @@ footer > section:nth-child(2) div.flex-container.space-between *{
     border: 3px dashed red;
 }
 
-.debug > header{
+/* .debug > header{
     background-color: lightblue;
     
 }
 
-.debug > header > .navbar{
+.debug > header  .navbar{
     background-color: goldenrod;
-    
-    
-}
-
-.debug > header > .navbar{
     border: solid black 2px;
-
     
 }
 
-.debug > header > .navbar *{
+.debug > header  .navbar *{
     border: solid black 1px;
-
-    
-}
+} */
 
 .debug > main > section:nth-child(1){
     background-color: blue;
