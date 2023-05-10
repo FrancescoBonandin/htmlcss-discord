@@ -207,13 +207,20 @@ main section:nth-child(odd){
     background-color: #F6F6F6;
 }
 
+main > section:nth-child(odd)::before{
+ 
+}
+
+main > section:nth-child(odd)::before{
+ 
+}
 
 /* SEZIONE MAIN 5 */
 
 
 .big-box{
     height: 90%;
-    width: 100%;
+    width: 80px;
     text-align: center;
 }
 
@@ -335,8 +342,5 @@ footer > section:nth-child(2) > .container > .flex-container > .flex-container.s
 }
 
 
-
-
-
-
 /* SEZIONE FOOTER 2 */
+
