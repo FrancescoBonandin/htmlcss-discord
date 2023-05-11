@@ -207,12 +207,28 @@ main section:nth-child(odd){
     background-color: #F6F6F6;
 }
 
-main > section:nth-child(odd)::before{
- 
+main > section:nth-child(2)::before{
+    content: "";
+    background-color: red;
+    color: rgba(0, 0, 0, 0);
+    background-image: url(../img/wave.svg);
+    min-width:1200px;
+    height: 200px;
+    border: solid black 3px;
+    display: block;
+    
 }
 
-main > section:nth-child(odd)::before{
- 
+main > section:nth-child(2)::after{
+    content: "";
+    background-color: red;
+    background-image: url(../img/wave.svg);
+    min-width:1200px;
+    height: 200px;
+    border: solid black 3px;
+    display: block;
+    transform:rotateX(180deg);
+    
 }
 
 /* SEZIONE MAIN 5 */
@@ -220,7 +236,7 @@ main > section:nth-child(odd)::before{
 
 .big-box{
     height: 90%;
-    width: 80px;
+    width: 80%;
     text-align: center;
 }
 
@@ -249,6 +265,17 @@ main > section:nth-child(odd)::before{
     margin: auto;
 }
 
+main > section:nth-child(5)::before{
+    content: "";
+    background-color: red;
+    color: rgba(0, 0, 0, 0);
+    background-image: url(../img/wave.svg);
+    min-width:1200px;
+    height: 200px;
+    border: solid black 3px;
+    display: block;
+    
+}
 
 
 /* SEZIONE MAIN 5 */
