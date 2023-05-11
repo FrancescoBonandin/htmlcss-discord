@@ -110,7 +110,7 @@ ul{
 }
 
 main > section{
-    padding: 40px 0;
+    background-color: transparent;
 }
 
 
@@ -198,38 +198,38 @@ main > section.jumbotron{
 /* SEZIONE MAIN 1 */
 
 /* SEZIONE MAIN 2-4 */
+
+
 main .flex-container.y-center{
     padding: 20px 0;
     width: 100%;
 }
 
-main section:nth-child(odd){
-    background-color: #F6F6F6;
+body main > section:nth-of-type(2n + 3){
+background-color:rgba(0, 0, 0, 0.1);
 }
 
-main > section:nth-child(2)::before{
+main .wawe-top::before{
     content: "";
-    background-color: red;
-    color: rgba(0, 0, 0, 0);
+    background-color: transparent;
     background-image: url(../img/wave.svg);
     min-width:1200px;
     height: 200px;
-    border: solid black 3px;
     display: block;
-    
+    opacity: 0.1;
 }
 
-main > section:nth-child(2)::after{
+main .wawe-bottom::after{
     content: "";
-    background-color: red;
     background-image: url(../img/wave.svg);
     min-width:1200px;
     height: 200px;
-    border: solid black 3px;
     display: block;
     transform:rotateX(180deg);
+    opacity: 0.1;
     
 }
+
 
 /* SEZIONE MAIN 5 */
 
@@ -264,19 +264,6 @@ main > section:nth-child(2)::after{
 .big-box > div:nth-of-type(2) .my-button.background-indigo{
     margin: auto;
 }
-
-main > section:nth-child(5)::before{
-    content: "";
-    background-color: red;
-    color: rgba(0, 0, 0, 0);
-    background-image: url(../img/wave.svg);
-    min-width:1200px;
-    height: 200px;
-    border: solid black 3px;
-    display: block;
-    
-}
-
 
 /* SEZIONE MAIN 5 */
 
